@@ -55,3 +55,4 @@ public class Product {
     @JsonIgnore
     private Set<SupplierProduct> supplierProducts;
 }
+
