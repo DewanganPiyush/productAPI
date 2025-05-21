@@ -1,9 +1,10 @@
 package com.healthcatalyst.productapi.repository;
 
-import com.healthcatalyst.productapi.entity.Product;
+import com.healthcatalyst.productapi.entity.Supplier;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ProductRepository extends JpaRepository<Product, Long> {
+public interface SupplierRepository extends JpaRepository<Supplier, Long> {
+
 }
