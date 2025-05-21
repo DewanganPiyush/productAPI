@@ -1,5 +1,6 @@
 package com.healthcatalyst.productapi.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -18,6 +19,7 @@ public class SupplierProduct {
 
     @ManyToOne
     @JoinColumn(name="supplier_id")
+    @JsonBackReference
     private Supplier supplier;
 
     @ManyToOne
